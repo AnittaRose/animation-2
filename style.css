@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80vw;
+    height: 80vh;
+    background-color: green;
+    padding: 5px;
+    margin: auto;
+    position: relative;
+    margin-top: 5em;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: palevioletred;
+    position: absolute;
+    animation-name: animation1;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+@keyframes animation1{
+    0%{
+        top:0px;
+        left:0px;
+    }
+    25%{
+        top:513px;
+        left:0px;
+    }
+    45%{
+        top:513px;
+        left:325px;
+    }
+    65%{
+        left: 345px;
+        top: 0px  ;
+    }
+    85%{
+        top:0px;
+        left: 600px;
+    }
+    100%{
+        top:513px;
+        left:600px;
+    }
+
+}
